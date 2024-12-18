@@ -5,4 +5,4 @@ COPY . .
 
 RUN cargo build --release
 
-CMD ["./target/release/your-rust-api"]
+CMD ["./target/release/main"]
