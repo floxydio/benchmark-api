@@ -1,0 +1,5 @@
+go_benchmark/.env
+js_benchmark/.env
+js_benchmark/node_modules
+rust_benchmark/.env
+rust_benchmark/target
