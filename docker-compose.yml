@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+  go-benchmark:
+    build:
+      context: ./go-benchmark
+    ports:
+      - "3000:3000"
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 2g
+
+  rust-api:
+    build:
+      context: ./rust-benchmark
+    ports:
+      - "3001:3001"
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 2g
+
+  js-benchmark:
+    build:
+      context: ./js-benchmark
+    ports:
+      - "3002:3002"
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 2g
